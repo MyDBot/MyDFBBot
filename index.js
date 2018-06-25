@@ -21,7 +21,9 @@ app.get('/webhooks/' , (req ,res)=>{
 	if(req.query['hub.verify_token'] === 'MyDABD'){
 		res.send(req.query['hub.challange']);
 	}
-	res.send("Wrong Token!");
+	else{
+		res.send("Wrong Token!");
+	}
 });
 
 app.listen(app.get('port') , ()=>{
