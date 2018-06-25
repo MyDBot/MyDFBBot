@@ -12,7 +12,7 @@ app.set('port' , (process.env.PORT || 5000));
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
-let token = "EAADT0Fs73bIBAKJRLDuG1QG20d2MB7DqrdaasTco3Oc8EBfwmNBYUCWzvyMbgJkcVSeZBYwc0IWdKMOpeYXbY4Oaxm74XTlfIpKSUsZCmtzfUqLjGbT6jWzyr4XYxWzg9SSYmu70TeTXQEcZAjNJBHhyC9AfK9K8374xjsBXgZDZD";
+let token = "EAADT0Fs73bIBACB4ZAMSTaGJY1k6chxIEvU9stQYP480ujejW0LYCEvITnU3jY7ZA9f2AcNY8tzYY8PH1WI4SoZBR7ujeiXQQg6pdnjxVGpZAcckNGRbkxSBY2SSdcP2K8heQelwuqEJZBOh6dKVmQIPkSuctnWSgz09yEFBflgZDZD";
 
 app.get('/' , (req ,res)=>{
 	res.send("Hi Im a ChatBot!");
