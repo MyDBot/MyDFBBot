@@ -34,7 +34,7 @@ app.post('/webhooks/' ,(req,res)=>{
 		let sender = event.sender.id;
 		if(event.message && event.message.text){
 			let text = event.message.text;
-			sendText(sender , 'Text Echo: '+ text.substring(0,100);
+			sendText(sender , 'Text Echo: '+ text.substring(0,100));
 
 		}
 	}
